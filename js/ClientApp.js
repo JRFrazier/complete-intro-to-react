@@ -1,18 +1,18 @@
 import React from 'react'
 import { render } from 'react-dom'
+import { HashRouter, Match } from 'react-router'
 import '../public/normalize.css'
 import '../public/style.css'
+import Landing from './Landing'
 
 const App = React.createClass({
   render () {
     return (
-      <div className='app'>
-        <div className='landing'>
-          <h1>svideo</h1>
-          <input type='text' placeholder='Search' />
-          <a> or Growse All</a>
+      <HashRouter>
+        <div className='app'>
+          <Match exactly pattern='/' component={ Landing } />
         </div>
-      </div>
+      </HashRouter>
     )
   }
 })
