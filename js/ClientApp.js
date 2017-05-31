@@ -6,6 +6,7 @@ import Search from './Search'
 import '../public/normalize.css'
 import '../public/style.css'
 
+
 const App = React.createClass({
   render () {
     return (
